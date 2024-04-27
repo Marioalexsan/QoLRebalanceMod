@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<RootNamespace>Marioalexsan.GrindeaQoL</RootNamespace>
+		<AssemblyName>GrindeaQoL</AssemblyName>
+		<TargetFramework>net472</TargetFramework>
+
+		<LangVersion>11.0</LangVersion>
+
+		<PlatformTarget>x86</PlatformTarget>
+		<Platforms>x86</Platforms>
+		<OutputType>Library</OutputType>
+	</PropertyGroup>
+
+	<!-- Nuget -->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
+		<PackageReference Include="System.IO.Compression" Version="4.3.0" />
+	</ItemGroup>
+	
+	<ItemGroup>
+        <Reference Include="ModBagman">
+          <HintPath>Dependencies\ModBagman.exe</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Xna.Framework">
+          <HintPath>Dependencies\Microsoft.Xna.Framework.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Xna.Framework.Game">
+          <HintPath>Dependencies\Microsoft.Xna.Framework.Game.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Xna.Framework.Graphics">
+          <HintPath>Dependencies\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.Xna.Framework.Xact">
+          <HintPath>Dependencies\Microsoft.Xna.Framework.Xact.dll</HintPath>
+        </Reference>
+        <Reference Include="Secrets Of Grindea">
+          <HintPath>Dependencies\Secrets Of Grindea.exe</HintPath>
+        </Reference>
+	</ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Resources\Resource.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resource.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Resources\Resource.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+</Project>

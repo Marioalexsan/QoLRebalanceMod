@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QoLRebalanceMod", "QoLRebalanceMod.csproj", "{763B3319-814B-4743-A1C6-0B14F75243BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{763B3319-814B-4743-A1C6-0B14F75243BB}.Debug|x86.ActiveCfg = Debug|x86
+		{763B3319-814B-4743-A1C6-0B14F75243BB}.Debug|x86.Build.0 = Debug|x86
+		{763B3319-814B-4743-A1C6-0B14F75243BB}.Release|x86.ActiveCfg = Release|x86
+		{763B3319-814B-4743-A1C6-0B14F75243BB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E06B143-F4A1-43A8-8371-E49E2EB32A9F}
+	EndGlobalSection
+EndGlobal
