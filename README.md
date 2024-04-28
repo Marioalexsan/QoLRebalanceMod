@@ -23,6 +23,7 @@ Changelist:
   * Hood of Defiance (the 999 essence item from Arcade) now has -9999 DEF for challenge purposes
 * Some other items that were previously for style now have stats, or have had their stats changed
   * Check ItemStatRebalance.cs for full details
+* Buffed Titan's Throw to also cast the spin when returning the sword using gold charge's return
 
 # Installation
 
