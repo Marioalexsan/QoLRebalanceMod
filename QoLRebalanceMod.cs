@@ -85,7 +85,15 @@ namespace Marioalexsan.GrindeaQoL
                 GetAudio().RedirectMusic("LukeBattle", "");
             }
 
-            CAS.AddChatMessage($"Toggled Luke alt music to {(ToggledLukeMusic ? "on" : "off")}.");
+            CAS.AddChatMessage($"Toggled Luke alt music {(ToggledLukeMusic ? "on" : "off")}.");
+        }
+
+        [ModCommand(nameof(ToggleStatHud))]
+        public void ToggleStatHud()
+        {
+            StatHUD.Enabled = !StatHUD.Enabled;
+
+            CAS.AddChatMessage($"Toggled Stat HUD {(StatHUD.Enabled ? "on" : "off")}.");
         }
     }
 }

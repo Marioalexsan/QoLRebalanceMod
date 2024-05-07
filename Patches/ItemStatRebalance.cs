@@ -304,6 +304,10 @@ internal class ItemStatRebalance
         // Hood of Darkness
         var hood = vanilla.GetItem(ItemCodex.ItemTypes._Hat_HoodOfDarkness.ToString());
         hood[StatEnum.DEF] = -9999; // Consider this a challenge
+
+        // Paper Bag funnies
+        var paperBag = vanilla.GetItem(ItemCodex.ItemTypes._Hat_Paperbag.ToString());
+        paperBag.HatDoubleSlot = false;
     }
 
     public static void CleanupMethod()
